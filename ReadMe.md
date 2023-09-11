@@ -2,10 +2,9 @@
 
 ## Trabalho de Programação em Web - Quiz
 
-### Alunos: Gabriel Willye Borges Valençoela e Lucas
+### Alunos: Gabriel Willye Borges Valençoela e Lucas Insira seu sobrenome aqui
 
-[X] - Protótipos Balsamiq
-
+[] - Protótipos Balsamiq
 [] - Protótipos com Design (Lucas)
 
 [] - Definir tecnologias e linguagens pro projeto
