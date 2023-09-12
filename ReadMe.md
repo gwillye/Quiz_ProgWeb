@@ -4,12 +4,6 @@
 
 ### Alunos: Gabriel Willye Borges Valençoela e Lucas Lacerda Arruda
 
-[] - Protótipos Balsamiq
-[] - Protótipos com Design (Lucas)
-
-[] - Definir tecnologias e linguagens pro projeto
-
-[] - Montar a documentação
-
-[] - Entregar o solicitado pelo professor no prazo
-
+Este repositório contém os arquivos, códigos e a documentação utilizada pelos estudantes Gabriel Willye Borges Valençoela e Lucas Lacerda Arruda para o desenvolvimento do trabalho prático da matéria de Programação Web, turma 02 - 2023 02.
+O relatório está disponível [aqui](Protótipos/relatorio.pdf).
+Os protótipos, desenvolvidos utilizando a ferramenta Balsamiq, estão disponíveis [aqui](Protótipos/Balsamiq/).
