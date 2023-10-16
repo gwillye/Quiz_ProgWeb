@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    background-color: #00FFFF; /* Verde ciano */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20%;
+    color: #00FFFF;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.info-table {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+}
+
+#left-table {
+    left: 10%;
+}
+
+#right-table {
+    right: 10%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+a.play-button {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+    background-color: #00FFFF;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

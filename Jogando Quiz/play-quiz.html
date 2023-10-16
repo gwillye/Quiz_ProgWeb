@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz n123</title>
+    <link rel="stylesheet" href="play-quiz.css">
+</head>
+<body>
+    <div class="question-number">1</div>
+    <h1 class="page-title">Quiz n123</h1>
+    <div class="time-box">Tempo Restante: <span id="countdown">60s</span></div>
+
+    <table class="question-table">
+        <tr>
+            <td>
+                <img src="question_image.jpg" alt="Questão">
+            </td>
+        </tr>
+    </table>
+
+    <div class="answer-box">
+        <button class="answer-button" onclick="checkAnswer(1)">Alternativa A</button>
+        <button class="answer-button" onclick="checkAnswer(2)">Alternativa B</button>
+        <button class="answer-button" onclick="checkAnswer(3)">Alternativa C</button>
+        <button class="answer-button" onclick="checkAnswer(4)">Alternativa D</button>
+    </div>
+
+    <button class="back-button">Voltar</button>
+</body>
+</html>
