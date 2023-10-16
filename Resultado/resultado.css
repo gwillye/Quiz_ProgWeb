@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 5%;
+    color: #000; /* Cor do título */
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    background-color: #00FFFF; /* Cor do botão "Voltar" */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-again-button {
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    background-color: #00FFFF; /* Cor do botão "Jogar Novamente" */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 40%;
+    height: 80%;
+}
+
+.result-table {
+    width: 100%;
+}
+
+.result-table th, .result-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.result-table th {
+    background-color: #00FFFF; /* Cor de fundo do cabeçalho da tabela */
+    color: white;
+}
+
+.container-2 {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 25%;
+    height: 80%;
+}
+
+.trophy-box {
+    text-align: center;
+}
+
+.trophy-fraction {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Cor da fração */
+}
+
+.trophy-box img {
+    max-width: 50px;
+}
+
+.user-stats {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.user-stats td {
+    padding: 5px 0;
+}
+
+.user-position {
+    text-align: right;
+    margin-top: 10px;
+    color: #00FF00; /* Cor da posição no ranking */
+}
