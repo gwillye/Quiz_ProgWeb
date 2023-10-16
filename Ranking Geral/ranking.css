@@ -1,0 +1,61 @@
+/* Estilizando o corpo (body) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o h1 (Título) */
+h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Estilizando o botão "Voltar" */
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #008000;
+}
+
+/* Estilizando a barra de pesquisa */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 2%;
+}
+
+/* Estilizando a tabela */
+table {
+    width: 70%;
+    margin: 30% 15%;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
