@@ -78,9 +78,9 @@ label input[type="radio"] {
 }
 
 #salvar {
-    position: absolute;
+    position: fixed;
     bottom: 5%;
-    right: 5%;
+    right: 4%;
     background-color: cyan;
     padding: 10px 20px;
     text-decoration: none;
