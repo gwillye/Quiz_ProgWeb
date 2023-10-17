@@ -1,7 +1,7 @@
 /* Estilizando o corpo (body) */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #307ce4;
     margin: 0;
     padding: 0;
 }
@@ -33,18 +33,18 @@ a:hover {
 
 /* Estilizando a barra de pesquisa */
 input[type="text"] {
-    width: 80%;
+    display: inline-block;
+    width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 2%;
 }
 
 /* Estilizando a tabela */
 table {
     width: 70%;
-    margin: 30% 15%;
+    margin: 5% 15%;
     border-collapse: collapse;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
