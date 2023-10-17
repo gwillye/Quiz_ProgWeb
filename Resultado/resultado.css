@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #307ce4;
 }
 
 .page-title {
@@ -18,7 +18,7 @@ body {
     background-color: #00FFFF; /* Cor do botão "Voltar" */
     padding: 10px 20px;
     text-decoration: none;
-    color: white;
+    color: #02adad;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -26,12 +26,13 @@ body {
 
 .play-again-button {
     position: absolute;
-    bottom: 5%;
-    right: 20%;
+    bottom: 10%;
+    right: 15%;
     background-color: #00FFFF; /* Cor do botão "Jogar Novamente" */
     padding: 10px 20px;
     text-decoration: none;
-    color: white;
+    font-size: 15px;
+    color: #02adad;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -47,24 +48,32 @@ body {
 
 .result-table {
     width: 100%;
+    background-color: white;
+    border-collapse: collapse;
 }
 
 .result-table th, .result-table td {
     text-align: center;
     padding: 10px;
+    border: 1px solid #f2f2f2;
 }
 
 .result-table th {
     background-color: #00FFFF; /* Cor de fundo do cabeçalho da tabela */
-    color: white;
+    color: #02adad;
 }
 
 .container-2 {
     position: absolute;
     top: 20%;
     right: 10%;
-    width: 25%;
-    height: 80%;
+    width: 350px;
+    height: 230px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
 }
 
 .trophy-box {
@@ -72,18 +81,24 @@ body {
 }
 
 .trophy-fraction {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
+    margin-right: 50px;
     color: #FFD700; /* Cor da fração */
 }
 
 .trophy-box img {
-    max-width: 50px;
+    max-width: 100px;
+}
+
+#quadro {
+    display: flex;
+    align-items: center;
 }
 
 .user-stats {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 40px;
+    width: 55%;
     text-align: center;
 }
 
@@ -92,7 +107,16 @@ body {
 }
 
 .user-position {
-    text-align: right;
-    margin-top: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 110px;
+    margin-top: 60px;
     color: #00FF00; /* Cor da posição no ranking */
+    border: 1px solid #d6d4d4; 
+    border-radius: 10px;
+}
+
+.user-position td {
+    font-size: 350%;
 }
