@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #307ce4;
 }
 
 body {
@@ -10,36 +9,53 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #307ce4;
 }
 
 .login-button {
     text-align: right;
     background-color: #ffffff;
-    margin-left: 10%;
-    margin-top: 3%;
-    padding: 15px 32px;
+    margin-top: 2%;
+    padding: 8px 25px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .menu-button {
-    margin-top: 3%;
-    margin-right: 75%;
+    margin-top: 2%;
+    margin-right: 77%;
     background-color: #ffffff;
     padding: 15px 15px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .content {
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
-p {
-    margin-left: 41%;
-    margin-right: 20%;
+#texto {
+    display: flex;
+    align-items: top;
+    margin-bottom: 2%;
+}
+
+#texto_bottom {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#texto_lat {
+    margin-right: 30%;
 }
 
 img {
-    width: 9%;
-    height: 9%;
-    margin-right: 30%;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 28%;
+    margin-right: 2%;
 }
 
 video {
@@ -49,8 +65,10 @@ video {
 }
 
 .signup-button {
-    margin-top: 3%;
-    bottom: 10%;
+    margin-top: 2%;
     background-color: #ffffff;
-    padding: 10px 28px;
+    padding: 8px 20px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
 }
