@@ -10,7 +10,7 @@ h1 {
     margin-top: 5%;
 }
 
-a {
+#voltar {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -76,4 +76,17 @@ label input[type="radio"] {
     border-radius: 5px;
     background: #a0c4fc;
 }
-    
+
+#salvar {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-color: cyan;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #02adad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
