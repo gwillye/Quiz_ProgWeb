@@ -47,3 +47,13 @@ body {
 .menu-item:hover {
     transform: scale(1.05);
 }
+
+#menuButton {
+    top: 5%;
+    left: 5%;
+}
+
+#configButton {
+    top: 5%; 
+    right: 5%;
+}

@@ -70,3 +70,18 @@ body {
 .greenButton:hover {
     background-color: #418c41;
 }
+
+#menuButton {
+    top: 5%; 
+    left: 5%;
+}
+
+#configButton {
+    top: 5%; 
+    right: 5%;
+}
+
+#come_backButton {
+    bottom: 5%; 
+    left: 5%;
+}

@@ -59,3 +59,13 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+#search {
+    text-align: center;
+}
+
+#come_back {
+    position: absolute; 
+    top: 5%; 
+    left: 5%;
+}
