@@ -3,37 +3,48 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color:#307ce4;
 }
 
 .login-button {
     position: absolute;
     top: 5%;
     right: 5%;
-    background: #55cc55;
-    color: white;
+    background: #ffff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.mode-switch {
+.menu-button {
     position: absolute;
     top: 5%;
     left: 5%;
+    background: #ffff;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mode-switch {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 3%;
 }
 
 .moon, .sun {
-    font-size: 24px;
+    font-size: 25px;
     margin: 0 5px;
 }
 
 .container {
     position: absolute;
     top: 20%;
-    left: 5%;
-    right: 5%;
+    left: 20%;
+    right: 20%;
     background: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,7 +53,7 @@ body {
 }
 
 h1 {
-    margin: 0 0 20px 0;
+    margin: 0 20px;
     font-size: 24px;
 }
 
@@ -58,25 +69,25 @@ label {
 
 input[type="email"],
 input[type="password"] {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 .forgot-password {
-    text-decoration: none;
-    color: #555;
-    float: right;
+    float: left;
     margin-top: 10px;
 }
 
 .no-account {
-    float: left;
-    margin: 10px 0;
+    float: bottom;
+    margin-top: 25px;
 }
 
 .register-button {
+    bottom: 5%;
+    left: 3%;
     background: #55cc55;
     color: white;
     border: none;
@@ -85,7 +96,10 @@ input[type="password"] {
     cursor: pointer;
 }
 
-.login-button {
+.login-button2 {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
     background: #55cc55;
     color: white;
     border: none;
@@ -99,6 +113,7 @@ input[type="password"] {
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-block: 1%;
 }
 
 .switch input {display:none;}
@@ -130,7 +145,8 @@ input[type="password"] {
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #55cc55;
+    ;
 }
 
 input:focus + .slider {
