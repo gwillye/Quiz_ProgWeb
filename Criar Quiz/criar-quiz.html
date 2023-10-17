@@ -13,10 +13,25 @@
     <table>
         <tr>
             <td>
-                Insira o título:
+                <label for="titulo">Insira o título:</label>
                 <input type="text" id="titulo">
-                <br>
-                Insira o tema:
+            </td>
+            <td>
+                <label for="idioma">Insira o idioma:</label>
+                <select id="idioma">
+                    <option value="Inglês">Inglês</option>
+                    <option value="Espanhol">Espanhol</option>
+                    <option value="Português">Português</option>
+                </select>
+            </td>
+            <td>
+                <label for="tempoLimite">Tempo limite do quiz:</label>
+                <input type="number" id="tempoLimite" min="5" max="15">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tema">Insira o tema:</label>
                 <select id="tema">
                     <option value="Tema 1">Tema 1</option>
                     <option value="Tema 2">Tema 2</option>
@@ -25,24 +40,16 @@
                     <option value="Tema 5">Tema 5</option>
                 </select>
             </td>
+            
             <td>
-                Insira o idioma:
-                <select id="idioma">
-                    <option value="Inglês">Inglês</option>
-                    <option value="Espanhol">Espanhol</option>
-                    <option value="Português">Português</option>
-                </select>
-                <br>
-                Quantidade de perguntas:
+                <label for="quantidadePerguntas">Quantidade de perguntas:</label>
                 <input type="number" id="quantidadePerguntas" min="10" max="30" step="5">
             </td>
+            
             <td>
-                Tempo limite do quiz:
-                <input type="number" id="tempoLimite" min="5" max="15">
-                <br>
-                Quantidade de alternativas:
-                <label><input type="radio" name="alternativas" value="4"> 4 alternativas</label>
-                <label><input type="radio" name="alternativas" value="5"> 5 alternativas</label>
+                <label for="radio">Quantidade de alternativas:</label>
+                <input type="radio" name="alternativas" value="4"> 4 alternativas
+                <input type="radio" name="alternativas" value="5"> 5 alternativas
             </td>
         </tr>
     </table>
