@@ -1,6 +1,9 @@
 body {
     text-align: center;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #307ce4;
 }
 
 h1 {
@@ -14,7 +17,11 @@ a {
     background-color: cyan;
     padding: 10px 20px;
     text-decoration: none;
-    color: white;
+    color: #02adad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 table {
@@ -27,8 +34,16 @@ table td {
     text-align: left;
 }
 
-input[type="text"], input[type="number"], select {
-    width: 100%;
+input[type="number"] {
+    width: 75%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="text"], select {
+    width: 97%;
     padding: 5px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -59,4 +74,6 @@ label input[type="radio"] {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
+    background: #a0c4fc;
 }
+    
