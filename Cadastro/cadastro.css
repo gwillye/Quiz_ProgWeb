@@ -3,15 +3,15 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color:#307ce4;
 }
 
 .container {
     position: absolute;
     top: 5%;
-    left: 20%;
-    right: 20%;
-    bottom: 5%;
-    background: #f2f2f2;
+    left: 30%;
+    right: 30%;
+    background: #a0c4fc;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    margin: 0 0 20px 0;
+    margin: 0 20px ;
     font-size: 24px;
 }
 
@@ -37,10 +37,16 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"] {
-    width: 100%;
+    width: 98%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+#texto {
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 50px;
 }
 
 input[type="checkbox"] {
@@ -48,19 +54,25 @@ input[type="checkbox"] {
 }
 
 .cancel-button {
+    bottom: 3%;
+    left: 3%;
+    font-size: 15px;
     background: #ff5555;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 10px 0 0;
 }
 
 .register-button {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
     background: #55cc55;
     color: white;
     border: none;
+    font-size: 15px;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
