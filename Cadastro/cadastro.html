@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro - Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form>
+            <label for="nomeCompleto">Nome completo:</label>
+            <input type="text" id="nomeCompleto" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="confirmarEmail">Confirmar email:</label>
+            <input type="email" id="confirmarEmail" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            
+            <label for="confirmarSenha">Confirmar senha:</label>
+            <input type="password" id="confirmarSenha" required>
+
+            <label for="nomeUsuario">Nome de usuário:</label>
+            <input type="text" id="nomeUsuario" required>
+
+            <label for="telefone">Número de telefone:</label>
+            <input type="tel" id="telefone">
+
+            <nav id="texto">
+                <input type="checkbox" id="termos" required>
+                <a href="termos_de_uso.html"><label for="termos">Eu aceito os termos de uso</label></a>
+            </nav>
+
+            <button class="cancel-button">Cancelar</button>
+            <button class="register-button">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

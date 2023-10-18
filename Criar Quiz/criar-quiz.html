@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Quiz</title>
+    <link rel="stylesheet" href="criar-quiz.css">
+</head>
+<body>
+    <h1>Criar Quiz</h1>
+    <a href="menu.html" id="voltar">Voltar</a>
+
+    <table>
+        <tr>
+            <td>
+                <label for="titulo">Insira o título:</label>
+                <input type="text" id="titulo">
+            </td>
+            <td>
+                <label for="idioma">Insira o idioma:</label>
+                <select id="idioma">
+                    <option value="Inglês">Inglês</option>
+                    <option value="Espanhol">Espanhol</option>
+                    <option value="Português">Português</option>
+                </select>
+            </td>
+            <td>
+                <label for="tempoLimite">Tempo limite do quiz:</label>
+                <input type="number" id="tempoLimite" min="5" max="15">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tema">Insira o tema:</label>
+                <select id="tema">
+                    <option value="Tema 1">Tema 1</option>
+                    <option value="Tema 2">Tema 2</option>
+                    <option value="Tema 3">Tema 3</option>
+                    <option value="Tema 4">Tema 4</option>
+                    <option value="Tema 5">Tema 5</option>
+                </select>
+            </td>
+            
+            <td>
+                <label for="quantidadePerguntas">Quantidade de perguntas:</label>
+                <input type="number" id="quantidadePerguntas" min="10" max="30" step="5">
+            </td>
+            
+            <td>
+                <label for="radio">Quantidade de alternativas:</label>
+                <input type="radio" name="alternativas" value="4"> 4 alternativas
+                <input type="radio" name="alternativas" value="5"> 5 alternativas
+            </td>
+        </tr>
+    </table>
+
+    <div id="perguntasContainer"></div>
+
+    <script src="criar-quiz.js"></script>
+
+    <a href="menu.html" id="salvar">Salvar</a>
+</body>
+</html>
