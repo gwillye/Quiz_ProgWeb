@@ -2,11 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #307ce4;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(tela-fundo.png);
+}
+
+#voltar {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #d1357e;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 #texto2 {
@@ -53,7 +67,7 @@ footer {
     width: 100%;
     border-top: 1px solid;
     text-size-adjust: 5%;
-    background-color: #1853a3;
+    background-color: #a82c66;
     font-size: 125%;
 }
 

@@ -9,7 +9,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #307ce4;
+    background-image: url(tela-fundo.png);
 }
 
 .login-button {

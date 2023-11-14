@@ -3,7 +3,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color:#307ce4;
+    background-color:#ffb7cf;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
     top: 5%;
     left: 30%;
     right: 30%;
-    background: #a0c4fc;
+    background: #ffd6e4;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;

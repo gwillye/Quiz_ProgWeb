@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #307ce4;
+    background-image: url(tela-fundo.png);
 }
 
 h1 {
@@ -13,11 +13,11 @@ h1 {
 #voltar {
     position: absolute;
     top: 5%;
-    right: 5%;
-    background-color: cyan;
+    left: 5%;
+    background-color: #d1357e;
     padding: 10px 20px;
     text-decoration: none;
-    color: #02adad;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -81,10 +81,10 @@ label input[type="radio"] {
     position: fixed;
     bottom: 5%;
     right: 4%;
-    background-color: cyan;
+    background-color: #d1357e;
     padding: 10px 20px;
     text-decoration: none;
-    color: #02adad;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
