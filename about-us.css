@@ -9,7 +9,7 @@ body {
     background-image: url(tela-fundo.png);
 }
 
-#voltar {
+.voltar {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -22,6 +22,11 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
+.voltar:hover {
+    background-color: #a82c66;
+}
+
 
 #texto2 {
     display: flex;

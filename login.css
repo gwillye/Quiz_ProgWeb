@@ -21,11 +21,18 @@ body {
     position: absolute;
     top: 5%;
     left: 5%;
-    background: #ffff;
+    background-color: #d1357e;
     border: none;
-    padding: 15px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.voltar-button:hover {
+    background-color: #a82c66;
 }
 
 .mode-switch {

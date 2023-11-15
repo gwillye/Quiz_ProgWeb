@@ -118,3 +118,11 @@ h1 {
 .back-button:hover {
     background-color: #a82c66;
 }
+
+a:hover {
+    background-color: #a82c66;
+}
+
+button:hover {
+    background-color: #a82c66;
+}

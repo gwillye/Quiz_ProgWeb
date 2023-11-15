@@ -17,6 +17,10 @@ body {
     border-radius: 5px;
 }
 
+a:hover {
+    background-color: #a82c66;
+}
+
 .page-title {
     text-align: center;
     margin-top: 8%;

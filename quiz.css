@@ -78,3 +78,7 @@ a.play-button {
     padding: 10px;
     border-radius: 5px;
 }
+
+a:hover {
+    background-color: #a82c66;
+}

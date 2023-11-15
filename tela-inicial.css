@@ -13,33 +13,50 @@ body {
 }
 
 .login-button {
+    position: absolute;
     text-align: right;
-    background-color: #ffffff;
-    margin-top: 2%;
+    background-color: #d1357e;
+    top: 4%;
+    right: 5%;
     padding: 8px 25px;
-    color: black;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #a82c66;
 }
 
 .menu-button {
-    margin-top: 2%;
-    margin-right: 77%;
-    background-color: #ffffff;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: #d1357e;
     padding: 15px 15px;
-    color: black;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
 }
 
+.menu-button:hover {
+    background-color: #a82c66;
+}
+
 .content {
-    margin-top: 4%;
+    margin-top: 9%;
 }
 
 #texto {
     display: flex;
-    align-items: top;
-    margin-bottom: 2%;
+    align-items: center;
+    margin-bottom: 0%;
 }
 
 #texto_bottom {
@@ -65,10 +82,19 @@ video {
 }
 
 .signup-button {
+    position: absolute;
     margin-top: 2%;
-    background-color: #ffffff;
+    left: 47%;
+    background-color: #d1357e;
     padding: 8px 20px;
-    color: black;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #a82c66;
 }

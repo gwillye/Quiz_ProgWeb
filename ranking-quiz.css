@@ -48,6 +48,10 @@ input[type="text"] {
     cursor: pointer;
 }
 
+.play-button:hover {
+    background-color: #a82c66;
+}
+
 .container-1 {
     position: absolute;
     top: 20%;
@@ -129,4 +133,8 @@ input[type="text"] {
 
 .user-position td {
     font-size: 350%;
+}
+
+a:hover {
+    background-color: #a82c66;
 }

@@ -120,3 +120,7 @@ body {
 .user-position td {
     font-size: 350%;
 }
+
+a:hover {
+    background-color: #a82c66;
+}
