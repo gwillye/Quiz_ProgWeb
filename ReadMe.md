@@ -13,7 +13,7 @@
 
 Este repositório contém os arquivos, códigos e a documentação utilizada pelos estudantes Gabriel Willye Borges Valençoela e Lucas Lacerda Arruda para o desenvolvimento do trabalho prático da matéria de Programação Web, turma 02 - 2023 02.
 
-Os protótipos, desenvolvidos utilizando a ferramenta Balsamiq, estão disponíveis [aqui](Protótipos/Balsamiq/).
+Os protótipos, desenvolvidos utilizando a ferramenta Balsamiq, estão disponíveis [aqui](Protótipos/Balsamiq/). Para compreender um pouco mais das ideias por trás do projeto e de como foi o desenvolvimento, nossa apresentação está [aqui](https://drive.google.com/file/d/1MI1FDUqTAkcOOQhNsP7k7KuNEE0hRh2C/view?usp=sharing).
 
 ## 2. Dependências
 
