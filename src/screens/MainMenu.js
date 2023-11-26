@@ -1,7 +1,6 @@
-// src/components/MainMenu.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MainMenu.css'; // Certifique-se de ter o arquivo CSS correspondente
+import './MainMenu.css';
 
 const MainMenu = () => {
   return (

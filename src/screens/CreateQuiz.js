@@ -1,48 +1,45 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Quiz, Pergunta } from './caminho-do-seu-arquivo/Quiz'; // Importe o caminho correto
 import './CreateQuiz.css';
 
 const CreateQuiz = () => {
-  const [quantidadePerguntas, setQuantidadePerguntas] = useState(1);
-  const [perguntas, setPerguntas] = useState([{ texto: '', alternativas: [{ texto: '', correta: false }] }]);
+  const [quiz, setQuiz] = useState(new Quiz(1, 1, [], 15, '', '', 'Inglês')); // Adapte conforme necessário
+  const [quantidadeAlternativas, setQuantidadeAlternativas] = useState(4);
+
+  const handleInputChange = (event, field) => {
+    setQuiz({ ...quiz, [field]: event.target.value });
+  };
 
   const handleQuantidadePerguntasChange = (event) => {
-    const novaQuantidade = parseInt(event.target.value);
-    setQuantidadePerguntas(novaQuantidade);
-
-    if (novaQuantidade > perguntas.length) {
-      const novasPerguntas = Array.from({ length: novaQuantidade - perguntas.length }, () => ({
-        texto: '',
-        alternativas: [{ texto: '', correta: false }],
-      }));
-      setPerguntas([...perguntas, ...novasPerguntas]);
-    } else if (novaQuantidade < perguntas.length) {
-      setPerguntas(perguntas.slice(0, novaQuantidade));
-    }
+    const quantidadePerguntas = parseInt(event.target.value);
+    const perguntas = Array.from({ length: quantidadePerguntas }, () => new Pergunta('', []));
+    setQuiz({ ...quiz, perguntas });
   };
 
   const handlePerguntaChange = (index, event) => {
-    const novasPerguntas = [...perguntas];
+    const novasPerguntas = [...quiz.perguntas];
     novasPerguntas[index].texto = event.target.value;
-    setPerguntas(novasPerguntas);
+    setQuiz({ ...quiz, perguntas: novasPerguntas });
   };
 
   const handleAlternativaChange = (perguntaIndex, alternativaIndex, event) => {
-    const novasPerguntas = [...perguntas];
-    novasPerguntas[perguntaIndex].alternativas[alternativaIndex].texto = event.target.value;
-    setPerguntas(novasPerguntas);
+    const novasPerguntas = [...quiz.perguntas];
+    novasPerguntas[perguntaIndex].alternativas[alternativaIndex] = event.target.value;
+    setQuiz({ ...quiz, perguntas: novasPerguntas });
   };
 
   const handleCheckboxChange = (perguntaIndex, alternativaIndex) => {
-    const novasPerguntas = [...perguntas];
+    const novasPerguntas = [...quiz.perguntas];
     novasPerguntas[perguntaIndex].alternativas.forEach((alt, index) => {
       alt.correta = index === alternativaIndex;
     });
-    setPerguntas(novasPerguntas);
+    setQuiz({ ...quiz, perguntas: novasPerguntas });
   };
 
-  const criarPerguntas = () => {
-    // Sua lógica para criar perguntas aqui...
+  const criarQuiz = () => {
+    // Insira aqui o que for necessário para conectar com o Firebase
+    console.log('Quiz criado:', quiz);
   };
 
   return (
@@ -69,106 +66,8 @@ const CreateQuiz = () => {
         Voltar
       </Link>
 
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <label htmlFor="titulo">Insira o título:</label>
-              <input type="text" id="titulo" />
-            </td>
-            <td>
-              <label htmlFor="idioma">Insira o idioma:</label>
-              <select id="idioma">
-                <option value="Coreano">Coreano</option>
-                <option value="Espanhol">Espanhol</option>
-                <option value="Francês">Francês</option>
-                <option value="Inglês">Inglês</option>
-                <option value="Japonês">Japonês</option>
-                <option value="Português">Português</option>
-                <option value="Russo">Russo</option>
-              </select>
-            </td>
-            <td>
-              <label htmlFor="tempoLimite">Tempo limite das perguntas:</label>
-              <input type="number" id="tempoLimite" min="15" max="30" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label htmlFor="tema">Insira o tema:</label>
-              <select id="tema">
-                <option value="Artes">Artes</option>
-                <option value="Astronomia">Astronomia</option>
-                <option value="Biologia">Biologia</option>
-                <option value="Conhecimentos Gerais">Conhecimentos Gerais</option>
-                <option value="Coreano">Coreano</option>
-                <option value="Economia">Economia</option>
-                <option value="Engenharia">Engenharia</option>
-                <option value="Ensino Religioso">Ensino Religioso</option>
-                <option value="Espanhol">Espanhol</option>
-                <option value="Filosofia">Filosofia</option>
-                <option value="Física">Física</option>
-                <option value="Francês">Francês</option>
-                <option value="Geografia">Geografia</option>
-                <option value="História">História</option>
-                <option value="Inglês">Inglês</option>
-                <option value="Japonês">Japonês</option>
-                <option value="Literatura">Literatura</option>
-                <option value="Matemática">Matemática</option>
-                <option value="Português">Português</option>
-                <option value="Química">Química</option>
-                <option value="Russo">Russo</option>
-                <option value="Saúde">Saúde</option>
-                <option value="Sociologia">Sociologia</option>
-                <option value="Tecnologia da Informação">Tecnologia da Informação</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="perguntasContainer">
-        {perguntas.map((pergunta, perguntaIndex) => (
-          <div key={perguntaIndex} className="perguntaContainer">
-            <label htmlFor={`pergunta-${perguntaIndex + 1}`}>Pergunta {perguntaIndex + 1}:</label>
-            <input
-              type="text"
-              id={`pergunta-${perguntaIndex + 1}`}
-              value={pergunta.texto}
-              onChange={(event) => handlePerguntaChange(perguntaIndex, event)}
-            />
-
-            <div className="alternativasContainer">
-              {pergunta.alternativas.map((alternativa, alternativaIndex) => (
-                <div key={alternativaIndex} className="alternativaContainer">
-                  <label htmlFor={`alternativa-${perguntaIndex + 1}-${alternativaIndex + 1}`}>
-                    Alternativa {alternativaIndex + 1}:
-                  </label>
-                  <input
-                    type="text"
-                    id={`alternativa-${perguntaIndex + 1}-${alternativaIndex + 1}`}
-                    value={alternativa.texto}
-                    onChange={(event) => handleAlternativaChange(perguntaIndex, alternativaIndex, event)}
-                  />
-
-                  <label htmlFor={`checkbox-${perguntaIndex + 1}-${alternativaIndex + 1}`}>
-                    Resposta Certa:
-                  </label>
-                  <input
-                    type="checkbox"
-                    id={`checkbox-${perguntaIndex + 1}-${alternativaIndex + 1}`}
-                    checked={alternativa.correta}
-                    onChange={() => handleCheckboxChange(perguntaIndex, alternativaIndex)}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-
       <div>
-        <button onClick={criarPerguntas}>Criar Pergunta</button>
+        <button onClick={criarQuiz}>Criar Quiz</button>
       </div>
 
       <div>

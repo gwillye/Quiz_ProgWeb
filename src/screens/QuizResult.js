@@ -1,126 +1,84 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(tela-fundo.png);
-}
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './QuizResult.css';
 
-.page-title {
-    text-align: center;
-    margin-top: 5%;
-    color: #000; /* Cor do título */
-}
+const QuizResult = () => {
+    // Inserir Firebase aqui
+  const userResults = [
+    { position: 1, nickname: 'Usuario1', record: '90%', gamesPlayed: 25 },
+    { position: 2, nickname: 'Usuario2', record: '85%', gamesPlayed: 20 },
+  ];
 
-.back-button {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    background-color: #d1357e; /* Cor do botão "Voltar" */
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  return (
+    <div>
+      <h1 className="page-title">Quiz n123</h1>
 
-.play-again-button {
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    background-color: #d1357e; /* Cor do botão "Jogar Novamente" */
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+      <Link to="/jogar-quiz" className="back-button">
+        Voltar
+      </Link>
+      <Link to="/quiz" className="play-again-button">
+        Jogar Novamente
+      </Link>
 
-.container-1 {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 40%;
-    height: 80%;
-}
+      <div className="container-1">
+        <table className="result-table">
+          <thead>
+            <tr>
+              <th>Posição</th>
+              <th>Nickname</th>
+              <th>Recorde</th>
+              <th>Quantidade de Jogos</th>
+            </tr>
+          </thead>
+          <tbody>
+            {userResults.map((result, index) => (
+              <tr key={index}>
+                <td>{result.position}º</td>
+                <td>{result.nickname}</td>
+                <td>{result.record}</td>
+                <td>{result.gamesPlayed}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-.result-table {
-    width: 100%;
-    background-color: white;
-    border-collapse: collapse;
-}
+      <div className="container-2">
+        <div className="trophy-box">
+          <span className="trophy-fraction">4/5</span>
+          <img src="trophy.png" alt="Troféu" />
+        </div>
+        <nav id="quadro">
+          <table className="user-stats">
+            <tbody>
+              <tr>
+                <td>Sua Pontuação:</td>
+                <td>4000 pontos</td>
+              </tr>
+              <tr>
+                <td>Tempo de Jogo:</td>
+                <td>30 min</td>
+              </tr>
+              <tr>
+                <td>Quantidade de Jogos:</td>
+                <td>50</td>
+              </tr>
+            </tbody>
+          </table>
+          <table className="user-position">
+            <tbody>
+              <tr>
+                <th>Posição no Ranking:</th>
+              </tr>
+              <tr>
+                <td>3º</td>
+              </tr>
+            </tbody>
+          </table>
+        </nav>
+      </div>
+    </div>
+  );
+};
 
-.result-table th, .result-table td {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #f2f2f2;
-}
-
-.result-table th {
-    background-color: #d1357e; /* Cor de fundo do cabeçalho da tabela */
-    color: white;
-}
-
-.container-2 {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 350px;
-    height: 230px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    padding: 20px;
-}
-
-.trophy-box {
-    text-align: center;
-}
-
-.trophy-fraction {
-    font-size: 50px;
-    font-weight: bold;
-    margin-right: 50px;
-    color: #FFD700; /* Cor da fração */
-}
-
-.trophy-box img {
-    max-width: 100px;
-}
-
-#quadro {
-    display: flex;
-    align-items: center;
-}
-
-.user-stats {
-    margin-top: 40px;
-    width: 55%;
-    text-align: center;
-}
-
-.user-stats td {
-    padding: 5px 0;
-}
-
-.user-position {
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
-    width: 110px;
-    margin-top: 60px;
-    color: #00FF00; /* Cor da posição no ranking */
-    border: 1px solid #d6d4d4; 
-    border-radius: 10px;
-}
-
-.user-position td {
-    font-size: 350%;
-}
-
-a:hover {
-    background-color: #a82c66;
-}
+export default QuizResult;

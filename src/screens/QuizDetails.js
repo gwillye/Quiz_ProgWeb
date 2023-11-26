@@ -1,16 +1,15 @@
-// src/components/QuizDetails.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './QuizDetails.css'; // Certifique-se de ter o arquivo CSS correspondente
-import { Quiz } from './caminho/para/Quiz'; // Substitua pelo caminho real do seu arquivo Quiz
+import './QuizDetails.css';
+import { Quiz } from './src/models/Quiz.js';
 
 const QuizDetails = ({ match }) => {
-  const quizId = parseInt(match.params.id); // Obtém o ID do quiz da URL
+  const quizId = parseInt(match.params.id); 
   const [quiz, setQuiz] = useState(new Quiz(quizId, 0, [], 0, '', '', ''));
 
-  // Mock de dados para o quiz
+
   useEffect(() => {
-    // Substitua esta parte com a lógica para buscar o quiz do servidor ou de onde quer que venha
+    // Trocar quando conectar com o Firebase, para que seja possível buscar dados do banco de dados
     setQuiz(new Quiz(quizId, 0, [], 60, 'Tema do Quiz', 'Quiz n123', 'Português'));
   }, [quizId]);
 

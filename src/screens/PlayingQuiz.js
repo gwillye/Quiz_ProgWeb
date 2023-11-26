@@ -1,20 +1,18 @@
-// src/components/PlayingQuiz.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './PlayingQuiz.css'; // Certifique-se de ter o arquivo CSS correspondente
-import { Quiz, Pergunta } from './caminho/para/Quiz'; // Substitua pelo caminho real dos seus arquivos Quiz e Pergunta
+import './PlayingQuiz.css'; 
+import { Quiz, Pergunta } from './src/models/'; 
 
 const PlayingQuiz = ({ match }) => {
-  const quizId = parseInt(match.params.id); // Obtém o ID do quiz da URL
+  const quizId = parseInt(match.params.id); 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [remainingTime, setRemainingTime] = useState(0);
   const [quiz, setQuiz] = useState(new Quiz(quizId, 0, []));
 
-  // Mock de dados de perguntas usando a classe Pergunta
+// Exemplo
   const perguntas = [
     new Pergunta(quizId, 1, 'Qual é a capital do Brasil?', ['Brasília', 'Rio de Janeiro', 'São Paulo', 'Belo Horizonte'], [1]),
     new Pergunta(quizId, 2, 'Quanto é 2 + 2?', ['3', '4', '5', '6'], [2]),
-    // Adicione mais perguntas conforme necessário
   ];
 
   useEffect(() => {
@@ -43,14 +41,11 @@ const PlayingQuiz = ({ match }) => {
   };
 
   const checkAnswer = (alternativaIndex) => {
-    // Lógica para verificar se a alternativa está correta
     const perguntaAtual = quiz.perguntas[currentQuestion];
     if (perguntaAtual.respostas.includes(alternativaIndex)) {
-      // A alternativa está correta
       console.log('Resposta correta!');
-      // Adicione lógica para contabilizar pontos ou fazer o que for necessário
+      // Será necessário criar um contador? Se for me avise
     } else {
-      // A alternativa está incorreta
       console.log('Resposta incorreta!');
     }
 

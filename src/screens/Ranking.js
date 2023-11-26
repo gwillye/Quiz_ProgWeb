@@ -1,15 +1,12 @@
-// src/components/Ranking.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Ranking.css'; // Certifique-se de ter o arquivo CSS correspondente
-
+import './Ranking.css';
 const Ranking = () => {
   // Dados estáticos (serão substituídos pelos dados do Firebase no futuro)
   const dadosRanking = [
     { posicao: 1, apelido: 'Jogador1', pontosTotal: 1000, partidas: 50, pontuacao: 2000 },
     { posicao: 2, apelido: 'Jogador2', pontosTotal: 900, partidas: 45, pontuacao: 1900 },
     { posicao: 3, apelido: 'Jogador3', pontosTotal: 800, partidas: 40, pontuacao: 1800 },
-    // Adicionar mais dados futuramente...
   ];
 
   return (

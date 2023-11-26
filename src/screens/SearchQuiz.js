@@ -1,4 +1,3 @@
-// src/components/SearchQuiz.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SearchQuiz.css';

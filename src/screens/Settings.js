@@ -1,33 +1,28 @@
-// src/components/Settings.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Settings.css'; // Certifique-se de ter o arquivo CSS correspondente
-import { Quiz } from '../caminho/do/seu/Quiz'; // Substitua pelo caminho real do seu Quiz
-import { Usuario } from '../caminho/do/seu/Usuario'; // Substitua pelo caminho real do seu Usuario
+import './Settings.css';
+import { Quiz } from '../src/models/Quiz'; 
+import { Usuario } from '../src/models/Usuario'; 
 
 const Settings = () => {
-  // Estado para controlar a visibilidade da senha
   const [mostrarSenha, setMostrarSenha] = useState(false);
 
   // Dados fictícios do usuário (serão substituídos pelos dados do Firebase no futuro)
   const usuario = new Usuario(1, false, 'Nome do Usuário', 'usuario@email.com', 'senha123');
 
-  // Lista fictícia de quizzes (será substituída pela lógica de busca do backend)
+  // Lista fictícia de quizzes (será substituída pelo Firebase futuramente)
   const quizzes = [
     new Quiz(1, 123, ['Pergunta 1', 'Pergunta 2'], ['Alt 1', 'Alt 2'], [1, 2]),
     new Quiz(2, 123, ['Pergunta 3', 'Pergunta 4'], ['Alt 3', 'Alt 4'], [3, 4]),
-    // Adicione mais quizzes conforme necessário
   ];
 
-  // Função para editar as informações da pessoa
   const editarInformacoes = () => {
-    // Lógica para atualizar as informações no backend (será implementado no futuro)
+    // Atualizar funções (adicionar configurações após implementar o Firebase)
     console.log('Informações editadas');
   };
 
-  // Função para excluir a conta
   const excluirConta = () => {
-    // Lógica para excluir a conta no backend (será implementado no futuro)
+    // Excluir sua conta (adicionar configurações após implementar o Firebase)
     console.log('Conta excluída');
   };
 
@@ -84,7 +79,7 @@ const Settings = () => {
             </li>
           ))}
         </ul>
-        {/* Lógica para exibir os quizzes do usuário (será implementado no futuro) */}
+        {/* Quizzes do usuário com o Firebase */}
       </div>
 
       {/* Botão Excluir Conta */}
