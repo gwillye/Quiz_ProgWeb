@@ -1,0 +1,5 @@
+Coloque os scripts aqui presentes na src do projeto React
+
+dependencias
+
+npm install react-router-dom

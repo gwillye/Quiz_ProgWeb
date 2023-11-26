@@ -7,18 +7,8 @@ body {
 
 .page-title {
     text-align: center;
-    margin-top: 125px;
+    margin-top: 5%;
     color: #000; /* Cor do título */
-}
-
-input[type="text"] {
-    position: absolute;
-    left: 35%;
-    top: 5%;
-    width: 28%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 .back-button {
@@ -34,22 +24,18 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.play-button {
+.play-again-button {
     position: absolute;
     bottom: 10%;
-    right: 18%;
+    right: 15%;
     background-color: #d1357e; /* Cor do botão "Jogar Novamente" */
     padding: 10px 20px;
     text-decoration: none;
+    font-size: 15px;
     color: white;
-    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.play-button:hover {
-    background-color: #a82c66;
 }
 
 .container-1 {

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(tela-fundo.png);
+}
+
+.back-button {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    background-color: #d1357e; /* Verde ciano */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #a82c66;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.quiz-container {
+    margin: 5% 20% 10% 20%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #d1d1d1;
+}
+
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    background-color: #d1357e; /* Verde */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+    
