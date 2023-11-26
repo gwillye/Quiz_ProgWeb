@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color:#ffb7cf;
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    right: 30%;
+    background: #ffd6e4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0 20px ;
+    font-size: 24px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#texto {
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+}
+
+.cancel-button {
+    bottom: 3%;
+    left: 3%;
+    font-size: 15px;
+    background: #ff5555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    background: #55cc55;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
