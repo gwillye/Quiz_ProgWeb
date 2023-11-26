@@ -1,10 +1,8 @@
-// src/components/ChooseQuiz.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ChooseQuiz.css'; // Certifique-se de ter o arquivo CSS correspondente
-import { Quiz } from './caminho/para/Quiz'; // Substitua pelo caminho real do seu arquivo Quiz
+import './ChooseQuiz.css'; 
+import { Quiz } from './src/models/Quiz.js'; 
 
-// Mock de dados de quizzes usando a classe Quiz
 const quizzes = [
   new Quiz(1, 123, [], 30, 'Tema Quiz 1', 'Quiz 1', 'Português'),
   new Quiz(2, 456, [], 20, 'Tema Quiz 2', 'Quiz 2', 'Inglês'),

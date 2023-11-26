@@ -1,7 +1,6 @@
-// src/components/CreateQuiz.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './CreateQuiz.css'; // Certifique-se de ter o arquivo CSS correspondente
+import './CreateQuiz.css';
 
 const CreateQuiz = () => {
   const [quantidadePerguntas, setQuantidadePerguntas] = useState(1);

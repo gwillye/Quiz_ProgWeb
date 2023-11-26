@@ -1,7 +1,6 @@
-// src/components/CreateAccount.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CreateAccount.css'; // Certifique-se de ter o arquivo CSS correspondente
+import './CreateAccount.css'; 
 
 const CreateAccount = () => {
   return (
