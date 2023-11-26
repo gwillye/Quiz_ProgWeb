@@ -11,6 +11,9 @@ const AboutUs = () => {
         <li>
             <Link to="/">Home</Link>
           </li>
+          <li>
+            <Link to="/Admin">Login de Administrador</Link>
+          </li>
       </nav>
 
       <section id="texto">

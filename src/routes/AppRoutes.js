@@ -13,6 +13,7 @@ import QuizResult from '../screens/QuizResult';
 import Ranking from '../screens/Ranking';
 import SearchQuiz from '../screens/SearchQuiz';
 import Settings from '../screens/Settings';
+import Admin from '../screens/Admin';
 
 const AppRoutes = () => {
   return (
